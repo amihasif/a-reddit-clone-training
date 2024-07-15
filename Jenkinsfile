@@ -13,7 +13,7 @@ pipeline {
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
     }
-  stages {
+    stages {
         stage('clean workspace') {
             steps {
                 cleanWs()
@@ -49,5 +49,5 @@ pipeline {
                 sh "trivy fs . > trivyfs.txt"
              }
          }
-  )
+    }
   }
