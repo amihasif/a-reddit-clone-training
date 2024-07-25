@@ -20,15 +20,15 @@ const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
       <InputGroup>
         <InputLeftElement
           pointerEvents="none"
-          color="gray.400"
+          color="red.400"
           // children={<SearchIcon mb={2} />}
         >
           <SearchIcon mb={2} />
         </InputLeftElement>
         <Input
-          placeholder="Search Reddit"
+          placeholder="Search Ami"
           fontSize="10pt"
-          _placeholder={{ color: "gray.500" }}
+          _placeholder={{ color: "black.500" }}
           _hover={{
             bg: "white",
             border: "1px solid",
